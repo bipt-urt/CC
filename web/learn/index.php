@@ -11,20 +11,62 @@
 		<title>在线编译系统</title>
 		<style>.dengkuan{font-family: consolas,ubuntu mono,menlo regular;}</style>
         <link href="http://121.42.141.42/urt/css/css.css" type="text/css" rel="stylesheet"></link>
+        <link href="http://121.42.141.42/urt/css/bottom.css" type="text/css" rel="stylesheet"></link>
 	</head>
 	<body>
+
+  
+	<style>body{padding-top:50px;}</style>
+	<nav  class="navbar navbar-default navbar-fixed-top">
+   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">OBS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">执行代码</a></li>
+		<li><a href="#">清空代码</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">说明文档</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">使用终端编辑？
+            </a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">OBS项目介绍</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+    </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+  </nav>
+              
+				
 		<form method="post" >
+			
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
        		 		<h1>在线编译系统</h1>
-        			<p>Powered by Zero To One</p>
-					</div>
+					<p>Online Building System</p>	
+				</div>
     		</div>
     	<div class="container-fluid">
             <div id="n2">
             </div>
 				<div id="button">
-					 <button type="submit" class="btn btn-primary">提交代码</button>
+                     <button type="submit" class="button button-glow button-border button-rounded button-primary">执行代码</button>
+
 				</div>
             <!--<div class="n2" style="background-color:#999">
             </div>-->  
@@ -57,9 +99,9 @@
 							exec("make /tmp/".$test_name);
 							chmod("/tmp/".$test_name,0777);
 							passthru("ulimit -t 10 && /tmp/".$test_name);  //最大执行时间
-							unlink("/tmp/".$test_name); //删除编译后的二进制文件
 							}
 							?><?php if(isset($_POST["test_1"])&&$_POST["test_1"]!=""): ?></pre><?php endif; ?>
+						
 				</div>
 				<?php if(isset($_POST["test_1"])&&$_POST["test_1"]!=""): ?>
                 <div id="codeArea" class="col-sm-12 col-md-9 col-md-pull-3 col-xs-12">
@@ -75,7 +117,7 @@
 						if(!isset($_POST["test_1"])):
 						?>#include<stdio.h>
 //请输入您的代码 !0.0!
-int main(int argc,char *argv[])
+int main()
 {
 	printf("Hello World\n");
 	return 0;
