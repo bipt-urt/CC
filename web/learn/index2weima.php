@@ -130,7 +130,6 @@ int main()
             </div>   
 		<div id="footer">
 			<p>请在上面的文本框中编辑您的代码，然后单击提交按钮测试结果。</p>
-			<p>Powered by Sourse Code</p>
 		</div>
 	</div>
 	</form>

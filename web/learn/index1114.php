@@ -14,61 +14,19 @@
         <link href="http://121.42.141.42/urt/css/bottom.css" type="text/css" rel="stylesheet"></link>
 	</head>
 	<body>
-
-  
-	<style>
-
-	body{padding-top:50px;}</style>
-	<form method="post" >
-	<nav  class="navbar navbar-default navbar-fixed-top">
-     <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">OBS</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li> <button id="butt" type="submit" class="">执行代码</button></li>
-		<li><a href="#">清空代码</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">说明文档</a></li>
-            <li><a href="#">常见问题</a></li>
-            <li><a href="#">使用终端编辑？
-            </a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">OBS项目介绍</a></li>
-          </ul>
-        </li>
-      </ul>
-  
-    </div><!-- /.navbar-collapse -->
-   </div><!-- /.container-fluid -->
-  </nav>
-              
-				
-		
+		<form method="post" >
 			
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
        		 		<h1>在线编译系统</h1>
-					<p>Online Building System</p>	
-				</div>
+        			<p>Powered by Zero To One</p>
+					</div>
     		</div>
     	<div class="container-fluid">
             <div id="n2">
             </div>
 				<div id="button">
-                     <button type="submit" class="button button-glow button-border button-rounded button-primary">执行代码</button>
+                     <button type="submit" class="button button-glow button-rounded button-caution">执行代码</button>
 
 				</div>
             <!--<div class="n2" style="background-color:#999">
@@ -130,7 +88,6 @@ int main()
             </div>   
 		<div id="footer">
 			<p>请在上面的文本框中编辑您的代码，然后单击提交按钮测试结果。</p>
-			<p>Powered by Sourse Code</p>
 		</div>
 	</div>
 	</form>

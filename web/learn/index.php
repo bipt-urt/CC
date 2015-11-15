@@ -16,9 +16,12 @@
 	<body>
 
   
-	<style>body{padding-top:50px;}</style>
+	<style>
+
+	body{padding-top:50px;}</style>
+	<form method="post" >
 	<nav  class="navbar navbar-default navbar-fixed-top">
-   <div class="container-fluid">
+     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -33,7 +36,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">执行代码</a></li>
+        <li> <button id="butt" type="submit" class="">执行代码</button></li>
 		<li><a href="#">清空代码</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
@@ -53,7 +56,7 @@
   </nav>
               
 				
-		<form method="post" >
+		
 			
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
@@ -127,6 +130,7 @@ int main()
             </div>   
 		<div id="footer">
 			<p>请在上面的文本框中编辑您的代码，然后单击提交按钮测试结果。</p>
+			<p>Powered by Project Code</p>
 		</div>
 	</div>
 	</form>

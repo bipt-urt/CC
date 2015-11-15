@@ -43,4 +43,21 @@
 				color: #999;
 				font-weight:bold;
 			}
+			#butt input {
+				margin:10px 0 0 10px;
+				background:red;
+				color:#fff;
+				width:150px;
+				height:30px;
+				font:14px Verdana, Arial, Helvetica, sans-serif;
+				}
 
+				#butt{
+				border:none;
+				margin:9px 0 0 10px;
+				background:url(http://121.42.141.42/urt/image/butt.png);
+				color:;
+				width:68px;
+				height:30px;
+				font:14px Verdana, Arial, Helvetica, sans-serif;
+	}
