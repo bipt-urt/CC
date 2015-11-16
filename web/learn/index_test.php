@@ -8,7 +8,7 @@
   		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
   		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
  		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-		<title云编译系统</title>
+		<title>在线编译系统</title>
 		<style>.dengkuan{font-family: consolas,ubuntu mono,menlo regular;}</style>
         <link href="http://121.42.141.42/urt/css/css.css" type="text/css" rel="stylesheet"></link>
         <link href="http://121.42.141.42/urt/css/bottom.css" type="text/css" rel="stylesheet"></link>
@@ -30,14 +30,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://121.42.141.42/urt">OBS</a>
+      <a class="navbar-brand" href="#">OBS</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><button id="butt" type="submit" class="">执行代码</button></li>
-		<li><a href="http://121.42.141.42/urt/code_empty.php">清空代码</a></li>
+        <li> <button id="butt" type="submit" class="">执行代码</button></li>
+		<li><a href="#">清空代码</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -60,7 +60,7 @@
 			
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
-       		 		<h1>云编译系统</h1>
+       		 		<h1>在线编译系统</h1>
 					<p>Online Building System</p>	
 				</div>
     		</div>
