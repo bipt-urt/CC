@@ -45,7 +45,7 @@
           <ul class="dropdown-menu">
             <li><a href="#">说明文档</a></li>
             <li><a href="#">常见问题</a></li>
-            <li><a href="putty.html">使用终端编辑？ </a></li>
+            <li><a href="http://putty.htlm/">使用终端编辑？ </a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">OBS项目介绍</a></li>
           </ul>

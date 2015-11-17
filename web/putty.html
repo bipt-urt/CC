@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>putty说明说明</title>
+	</head>
+	<body>
+		<a href="http://121.42.141.42/urt">回主页<a><br/>
+1、打开putty，输入服务器地址，打开（open）服务器地址。</br>
+2、输入服务器账号、密码。</br>
+3、用Linux系统编辑器进行代码编辑。</br>
+</br>
+示例一个简单的Hello World程序：</br>
+	1、新建一个程序命名为Hello.c <br>vim Hello.c</br>
+	2、进入vim的编辑模式（按下i后即可进行代码编辑）<br>i</br>
+	3、编辑代码：<br>#include<stdio.h>
+int main()<br>
+{<br>
+	printf("Hello World\n");<br>
+	return 0;<br>
+}</br>
+	4、进入vim命令模式（按一下Esc）<br>	Esc</br>
+	5、对代码进行保存并退出编辑器：<br>:x</br>
+	6、编译代码（注意不能加后缀名.c）<br> make Hello</br>
+	7、执行代码（注意还是不能有后缀名.c）<br>./Hello</br>
+	</body>
+</html>

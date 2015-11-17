@@ -32,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://121.42.141.42/urt">CC</a>
+      <a class="navbar-brand" href="http://121.42.141.42/urt">OBS</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,7 +45,7 @@
           <ul class="dropdown-menu">
             <li><a href="#">说明文档</a></li>
             <li><a href="#">常见问题</a></li>
-            <li><a href="putty.html">使用终端编辑？ </a></li>
+            <li><a href="#">使用终端编辑？ </a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">OBS项目介绍</a></li>
           </ul>
@@ -62,7 +62,7 @@
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
        		 		<h1>云编译系统</h1>
-					<p>Compiliing Cloud</p>	
+					<p>Online Building System</p>	
 				</div>
     		</div>
     	<div class="container-fluid">
@@ -119,7 +119,13 @@
 							print($_POST["test_1"]);
 						}
 						if(!isset($_POST["test_1"])):
-						?><?php endif; ?></textarea>
+						?>#include<stdio.h>
+//请输入您的代码 !0.0!
+int main()
+{
+	printf("Hello World\n");
+	return 0;
+}<?php endif; ?></textarea>
 
   	  			</div>    
             </div>   

@@ -12,16 +12,23 @@
 		<style>.dengkuan{font-family: consolas,ubuntu mono,menlo regular;}</style>
         <link href="http://121.42.141.42/urt/css/css.css" type="text/css" rel="stylesheet"></link>
         <link href="http://121.42.141.42/urt/css/bottom.css" type="text/css" rel="stylesheet"></link>
-		<script>function CCS_submit()
-		{
-			$("Form").submit();	
-		}</script>
+		<script type="test/javascript">
+			function clrtext(){
+				if (document.getElementById()!=null)
+				{
+				document.getElementById().value=""
+				}
+}
+</script>
+
 	</head>
 	<body>
 
   
-	<style>body{padding-top:50px;}</style>
-	<form method="post">
+	<style>
+
+	body{padding-top:50px;}</style>
+	<form method="post" >
 	<nav  class="navbar navbar-default navbar-fixed-top">
      <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,14 +39,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://121.42.141.42/urt">CC</a>
+      <a class="navbar-brand" href="http://121.42.141.42/urt">CCS</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="javascript:CCS_submit()">执行代码</a></li>
-		<li><a href="http://121.42.141.42/urt/code_empty.php">清空代码</a></li>
+        <li><button id="butt" type="submit" class="">执行代码</button></li>
+		<li><a href="javascript:clrtext(test_1)">清空代码</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -62,7 +69,7 @@
 			<div class="bs-docs-header" id="content" tabindex="-1" >
 			<div class="container">
        		 		<h1>云编译系统</h1>
-					<p>Compiliing Cloud</p>	
+					<p>Cloudy Compiling System</p>	
 				</div>
     		</div>
     	<div class="container-fluid">
@@ -113,13 +120,19 @@
                 <div id="codeArea" class="col-sm-12 col-md-12 col-xs-12">
 				<?php endif; ?>
                 <h2>编辑您的代码：</h2>
-						<textarea class="form-control dengkuan" rows="20" name="test_1"><?php
+						<textarea class="form-control dengkuan" rows="20" name="test_1" id="test_1"><?php
 						if(isset($_POST["test_1"]))
 						{
 							print($_POST["test_1"]);
 						}
 						if(!isset($_POST["test_1"])):
-						?><?php endif; ?></textarea>
+						?>#include<stdio.h>
+//请输入您的代码 !0.0!
+int main()
+{
+	printf("Hello World\n");
+	return 0;
+}<?php endif; ?></textarea>
 
   	  			</div>    
             </div>   
