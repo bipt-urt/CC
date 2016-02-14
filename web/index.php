@@ -86,25 +86,25 @@
 							function getRandChar($length){
 							$str = null;
 							$strPol = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
-							$max = strlen($strPol)-1;
-							for($i=0;$i<$length;$i++){
-							$str.=$strPol[rand(0,$max)];
+							$max = strlen($strPol) - 1;
+							for($i = 0; $i < $length; $i++){
+							$str .= $strPol[rand(0, $max)];
 							}
 								return $str;
 							}
 							}
 							$randCharObj = new RandChar();
-							$test_name=$randCharObj->getRandChar(10);
-							$handle = fopen("/tmp/".$test_name.".cpp","w+");
+							$test_name = $randCharObj->getRandChar(10);
+							$handle = fopen("/tmp/".$test_name.".cpp", "w+");
 							$content = $_POST["test_1"];
-							fwrite($handle,$content);
+							fwrite($handle, $content);
 							fclose($handle);
-							chmod("/tmp/".$test_name.".cpp",0777);
+							chmod("/tmp/".$test_name.".cpp", 0777);
 							exec("make /tmp/".$test_name);
-							chmod("/tmp/".$test_name,0777);
+							chmod("/tmp/".$test_name, 0777);
 							passthru("ulimit -t 10 && /tmp/".$test_name);  //最大执行时间
 							}
-							?><?php if(isset($_POST["test_1"])&&$_POST["test_1"]!=""): ?></pre><?php endif; ?>
+							?><?php if(isset($_POST["test_1"]) && $_POST["test_1"] != ""): ?></pre><?php endif; ?>
 						
 				</div>
 				<?php if(isset($_POST["test_1"])&&$_POST["test_1"]!=""): ?>
